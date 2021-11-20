@@ -14,10 +14,10 @@ function Cover(props) {
     };
     const renderBasedOnType = () => {
         if (props.type === 'image') {
-            return (react_1.default.createElement("img", { src: props.src, alt: props.alt, width: props.width, height: props.height, "data-uk-cover": '' }));
+            return (react_1.default.createElement("img", { src: props.src, alt: props.alt, width: props.width, height: props.height, "uk-cover": '' }));
         }
         if (props.type === 'video') {
-            return (react_1.default.createElement("video", { autoPlay: props.autoPlay, loop: props.loop, muted: props.muted, playsInline: props.playsInline, width: props.width, height: props.height, "data-uk-cover": '' },
+            return (react_1.default.createElement("video", { autoPlay: props.autoPlay, loop: props.loop, muted: props.muted, playsInline: props.playsInline, width: props.width, height: props.height, "uk-cover": '' },
                 react_1.default.createElement("source", { src: props.src, type: `${props.type}/${props.videoFormat}` })));
         }
         console.error('Type property on cover component must be either video or image');

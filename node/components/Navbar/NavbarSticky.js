@@ -38,7 +38,7 @@ function NavbarSticky(props) {
             UIkit.util.on(props.id, 'active', props.onInactive);
         }
     }, []);
-    return (react_1.default.createElement("div", { id: props.id ? props.id : null, style: props.style ? props.style : null, className: `${set_class_names_1.setClassNames(props)}`, "data-uk-sticky": `
+    return (react_1.default.createElement("div", { id: props.id ? props.id : null, style: props.style ? props.style : null, className: `${set_class_names_1.setClassNames(props)}`, "uk-sticky": `
                 sel-target: .uk-navbar-container;
                 cls-active: uk-navbar-sticky;
                 ${props.options ? props.options : ''}

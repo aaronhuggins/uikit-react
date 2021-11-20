@@ -19,15 +19,15 @@ function Icon(props) {
     };
     const renderIconType = () => {
         if (props.href) {
-            return (react_1.default.createElement("a", { id: props.id ? props.id : null, style: props.style ? props.style : null, className: getClassNames(), href: props.href, "data-uk-icon": props.options }));
+            return (react_1.default.createElement("a", { id: props.id ? props.id : null, style: props.style ? props.style : null, className: getClassNames(), href: props.href, "uk-icon": props.options }));
         }
         if (props.image) {
             return (react_1.default.createElement("span", { id: props.id ? props.id : null, className: getClassNames(), style: {
                     backgroundImage: `url(${props.image})`,
                     ...props.style,
-                }, "data-uk-icon": props.options }));
+                }, "uk-icon": props.options }));
         }
-        return (react_1.default.createElement("em", { id: props.id ? props.id : null, style: props.style ? props.style : null, className: getClassNames(), "data-uk-icon": props.options }));
+        return (react_1.default.createElement("em", { id: props.id ? props.id : null, style: props.style ? props.style : null, className: getClassNames(), "uk-icon": props.options }));
     };
     return renderIconType();
 }

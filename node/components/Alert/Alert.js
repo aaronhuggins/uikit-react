@@ -76,7 +76,7 @@ function Alert(props) {
             opacity: !state.isOpen ? '0' : '1',
             ...props.style,
         } },
-        props.isClosable ? (react_1.default.createElement("a", { className: "uk-alert-close", "data-uk-close": true, onClick: handleClose })) : null,
+        props.isClosable ? react_1.default.createElement("a", { className: "uk-alert-close", "uk-close": true, onClick: handleClose }) : null,
         react_1.default.createElement("span", null, props.content)));
 }
 exports.Alert = Alert;

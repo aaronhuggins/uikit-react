@@ -15,7 +15,7 @@ function NavbarContainer(props) {
         });
     };
     return (react_1.default.createElement("div", null,
-        react_1.default.createElement("nav", { id: props.id ? props.id : null, className: `${_setClassNames()}`, style: props.style ? props.style : null, "data-uk-navbar": props.options ? props.options : '' }, props.children),
+        react_1.default.createElement("nav", { id: props.id ? props.id : null, className: `${_setClassNames()}`, style: props.style ? props.style : null, "uk-navbar": props.options ? props.options : '' }, props.children),
         props.dropbar ? react_1.default.createElement("div", { className: "uk-navbar-dropbar" }) : null));
 }
 exports.NavbarContainer = NavbarContainer;

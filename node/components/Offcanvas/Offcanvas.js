@@ -43,7 +43,7 @@ function Offcanvas(props) {
             UIkit.util.on(props.id, 'hidden', props.onHidden);
         }
     }, []);
-    return (react_1.default.createElement("div", { id: props.id, style: props.style ? props.style : null, className: `${set_class_names_1.setClassNames(props)}`, "data-uk-offcanvas": props.options ? props.options : '' },
+    return (react_1.default.createElement("div", { id: props.id, style: props.style ? props.style : null, className: `${set_class_names_1.setClassNames(props)}`, "uk-offcanvas": props.options ? props.options : '' },
         react_1.default.createElement("div", { className: "uk-offcanvas-bar" }, props.children)));
 }
 exports.Offcanvas = Offcanvas;

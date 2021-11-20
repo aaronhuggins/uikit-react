@@ -10,7 +10,7 @@ const classNames = classnames_1.default;
 const set_class_names_1 = require("../../utils/set-class-names");
 class Form extends react_1.default.Component {
     render() {
-        return (react_1.default.createElement("div", { id: this.props.id ? this.props.id : null, style: this.props.style ? this.props.style : null, className: this.setClassNames(), "data-uk-form-custom": this.props.custom ? '' : null }, this.props.children));
+        return (react_1.default.createElement("div", { id: this.props.id ? this.props.id : null, style: this.props.style ? this.props.style : null, className: this.setClassNames(), "uk-form-custom": this.props.custom ? '' : null }, this.props.children));
     }
     setClassNames() {
         return classNames({

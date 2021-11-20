@@ -14,6 +14,6 @@ function Link(props) {
             [`${set_class_names_1.setClassNames(props)}`]: true,
         });
     };
-    return (react_1.default.createElement("a", { id: props.id ? props.id : null, style: props.style ? props.style : null, "data-uk-toggle": props.toggleOptions ? props.toggleOptions : null, href: props.href, className: `${_setClassNames()}` }, props.children));
+    return (react_1.default.createElement("a", { id: props.id ? props.id : null, style: props.style ? props.style : null, "uk-toggle": props.toggleOptions ? props.toggleOptions : null, href: props.href, className: `${_setClassNames()}` }, props.children));
 }
 exports.Link = Link;

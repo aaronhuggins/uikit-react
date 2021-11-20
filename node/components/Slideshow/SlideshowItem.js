@@ -12,7 +12,7 @@ function SlideshowItem(props) {
             return react_1.default.createElement("img", { src: props.src, alt: props.alt, "uk-cover": "" });
         }
         if (props.type === 'video') {
-            return (react_1.default.createElement("video", { autoPlay: props.autoPlay, loop: props.loop, muted: props.muted, playsInline: props.playsInline, "data-uk-cover": '' },
+            return (react_1.default.createElement("video", { autoPlay: props.autoPlay, loop: props.loop, muted: props.muted, playsInline: props.playsInline, "uk-cover": '' },
                 react_1.default.createElement("source", { src: props.src, type: `${props.type}/${props.videoFormat}` })));
         }
         console.error('Type property on cover component must be either video or image');

@@ -19,7 +19,7 @@ function Button(props) {
             [`${set_class_names_1.setClassNames(props)}`]: true,
         });
     };
-    return isLink() ? (react_1.default.createElement("a", { id: props.id ? props.id : null, style: props.style ? props.style : null, "data-uk-toggle": props.toggleOptions, href: props.href, onClick: props.onClick, className: _setClassNames() }, props.children)) : (react_1.default.createElement("button", { id: props.id ? props.id : null, style: props.style ? props.style : null, "data-uk-toggle": props.toggleOptions, onClick: props.onClick, className: _setClassNames() }, props.children));
+    return isLink() ? (react_1.default.createElement("a", { id: props.id ? props.id : null, style: props.style ? props.style : null, "uk-toggle": props.toggleOptions, href: props.href, onClick: props.onClick, className: _setClassNames() }, props.children)) : (react_1.default.createElement("button", { id: props.id ? props.id : null, style: props.style ? props.style : null, "uk-toggle": props.toggleOptions, onClick: props.onClick, className: _setClassNames() }, props.children));
 }
 exports.Button = Button;
 // export class Button extends React.Component<ButtonProps, any> {
@@ -28,7 +28,7 @@ exports.Button = Button;
 //       <a
 //         id={this.props.id ? this.props.id : null}
 //         style={this.props.style ? this.props.style : null}
-//         data-uk-toggle={this.props.toggleOptions}
+//         uk-toggle={this.props.toggleOptions}
 //         href={this.props.href}
 //         onClick={this.props.onClick}
 //         className={this.setClassNames()}
@@ -39,7 +39,7 @@ exports.Button = Button;
 //       <button
 //         id={this.props.id ? this.props.id : null}
 //         style={this.props.style ? this.props.style : null}
-//         data-uk-toggle={this.props.toggleOptions}
+//         uk-toggle={this.props.toggleOptions}
 //         onClick={this.props.onClick}
 //         className={this.setClassNames()}
 //       >

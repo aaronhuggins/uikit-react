@@ -22,7 +22,7 @@ function Slideshow(props) {
         }
         return `uk-dark`;
     };
-    return (react_1.default.createElement("div", { id: props.id ? props.id : null, style: props.style ? props.style : null, className: `${set_class_names_1.setClassNames(props)}`, "data-uk-slideshow": props.options ? props.options : '' }, setNavigation()));
+    return (react_1.default.createElement("div", { id: props.id ? props.id : null, style: props.style ? props.style : null, className: `${set_class_names_1.setClassNames(props)}`, "uk-slideshow": props.options ? props.options : '' }, setNavigation()));
 }
 exports.Slideshow = Slideshow;
 exports.default = Slideshow;

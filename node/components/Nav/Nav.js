@@ -17,7 +17,7 @@ function Nav(props) {
             [`${set_class_names_1.setClassNames(props)}`]: true,
         });
     };
-    return (react_1.default.createElement("ul", { id: props.id ? props.id : null, style: props.style ? props.style : null, className: `${_setClassNames()}`, "data-uk-nav": props.options ? props.options : '' }, props.children));
+    return (react_1.default.createElement("ul", { id: props.id ? props.id : null, style: props.style ? props.style : null, className: `${_setClassNames()}`, "uk-nav": props.options ? props.options : '' }, props.children));
 }
 exports.Nav = Nav;
 exports.default = Nav;
