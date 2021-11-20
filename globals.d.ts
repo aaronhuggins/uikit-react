@@ -5,7 +5,7 @@ interface BaseProps {
 }
 
 interface BaseContainerProps extends BaseProps {
-  children: any;
+  children?: any;
   align?: string;
   height?: string;
   width?: string;
@@ -212,7 +212,7 @@ interface OffcanvasProps extends BaseProps {
   onBeforeHide?: Function;
   onHide?: Function;
   onHidden?: Function;
-  children: any;
+  children?: any;
 }
 
 interface OverlayProps extends BaseProps {
@@ -223,7 +223,7 @@ interface OverlayProps extends BaseProps {
 
 interface PanelProps extends BaseProps {
   isScrollable?: boolean;
-  children: any;
+  children?: any;
 }
 
 interface ParallaxProps extends BaseProps {

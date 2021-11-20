@@ -13,7 +13,7 @@ export class Radio extends React.Component<FormInputProps, any> {
         className={this.setClassNames()}
         type="radio"
         name={this.props.name ? this.props.name : null}
-        checked={this.props.value}
+        checked={(this.props.value as unknown) as boolean}
         onChange={this.props.onChange}
         onBlur={this.props.onBlur}
         onFocus={this.props.onFocus}
