@@ -1,6 +1,6 @@
 {
   "name": "uikit-react",
-  "version": "3.1.3",
+  "version": "3.1.4-beta1",
   "description": "UIkit components for use in React.",
   "repository": "https://github.com/vacarsu/uikit-react",
   "homepage": "https://vacarsu.github.io/uikit-react",
@@ -9,8 +9,8 @@
   "types": "node/index.js",
   "exports": {
     ".": {
-        "import": "./lib/uikit-react.js",
-        "require": "./node/index.js"
+      "import": "./lib/uikit-react.js",
+      "require": "./node/index.js"
     }
   },
   "scripts": {
