@@ -61,9 +61,7 @@ export function Alert(props: AlertProps) {
         ...props.style,
       }}
     >
-      {props.isClosable ? (
-        <a className="uk-alert-close" data-uk-close onClick={handleClose}></a>
-      ) : null}
+      {props.isClosable ? <a className="uk-alert-close" uk-close onClick={handleClose}></a> : null}
       <span>{props.content}</span>
     </div>
   );

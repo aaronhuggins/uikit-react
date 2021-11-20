@@ -18,7 +18,7 @@ export function Button(props: ButtonProps) {
     <a
       id={props.id ? props.id : null}
       style={props.style ? props.style : null}
-      data-uk-toggle={props.toggleOptions}
+      uk-toggle={props.toggleOptions}
       href={props.href}
       onClick={props.onClick}
       className={_setClassNames()}
@@ -29,7 +29,7 @@ export function Button(props: ButtonProps) {
     <button
       id={props.id ? props.id : null}
       style={props.style ? props.style : null}
-      data-uk-toggle={props.toggleOptions}
+      uk-toggle={props.toggleOptions}
       onClick={props.onClick}
       className={_setClassNames()}
     >
@@ -44,7 +44,7 @@ export function Button(props: ButtonProps) {
 //       <a
 //         id={this.props.id ? this.props.id : null}
 //         style={this.props.style ? this.props.style : null}
-//         data-uk-toggle={this.props.toggleOptions}
+//         uk-toggle={this.props.toggleOptions}
 //         href={this.props.href}
 //         onClick={this.props.onClick}
 //         className={this.setClassNames()}
@@ -55,7 +55,7 @@ export function Button(props: ButtonProps) {
 //       <button
 //         id={this.props.id ? this.props.id : null}
 //         style={this.props.style ? this.props.style : null}
-//         data-uk-toggle={this.props.toggleOptions}
+//         uk-toggle={this.props.toggleOptions}
 //         onClick={this.props.onClick}
 //         className={this.setClassNames()}
 //       >

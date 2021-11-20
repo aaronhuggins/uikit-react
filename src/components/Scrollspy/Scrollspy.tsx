@@ -7,7 +7,7 @@ export function Scrollspy(props: ScrollspyProps) {
       id={props.id ? props.id : null}
       style={props.style ? props.style : null}
       className={`${setClassNames(props)}`}
-      data-uk-scrollspy={props.options ? props.options : ''}
+      uk-scrollspy={props.options ? props.options : ''}
     >
       {props.children}
     </div>

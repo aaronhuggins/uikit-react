@@ -10,7 +10,7 @@ export class Form extends React.Component<FormProps, any> {
         id={this.props.id ? this.props.id : null}
         style={this.props.style ? this.props.style : null}
         className={this.setClassNames()}
-        data-uk-form-custom={this.props.custom ? '' : null}
+        uk-form-custom={this.props.custom ? '' : null}
       >
         {this.props.children}
       </div>

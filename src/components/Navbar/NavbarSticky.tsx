@@ -24,7 +24,7 @@ export function NavbarSticky(props: NavbarStickyProps) {
       id={props.id ? props.id : null}
       style={props.style ? props.style : null}
       className={`${setClassNames(props)}`}
-      data-uk-sticky={`
+      uk-sticky={`
                 sel-target: .uk-navbar-container;
                 cls-active: uk-navbar-sticky;
                 ${props.options ? props.options : ''}

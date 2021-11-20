@@ -21,7 +21,7 @@ export function Icon(props: IconProps) {
           style={props.style ? props.style : null}
           className={getClassNames()}
           href={props.href}
-          data-uk-icon={props.options}
+          uk-icon={props.options}
         />
       );
     }
@@ -35,7 +35,7 @@ export function Icon(props: IconProps) {
             backgroundImage: `url(${props.image})`,
             ...props.style,
           }}
-          data-uk-icon={props.options}
+          uk-icon={props.options}
         />
       );
     }
@@ -45,7 +45,7 @@ export function Icon(props: IconProps) {
         id={props.id ? props.id : null}
         style={props.style ? props.style : null}
         className={getClassNames()}
-        data-uk-icon={props.options}
+        uk-icon={props.options}
       />
     );
   };

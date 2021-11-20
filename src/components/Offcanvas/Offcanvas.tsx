@@ -33,7 +33,7 @@ export function Offcanvas(props: OffcanvasProps) {
       id={props.id}
       style={props.style ? props.style : null}
       className={`${setClassNames(props)}`}
-      data-uk-offcanvas={props.options ? props.options : ''}
+      uk-offcanvas={props.options ? props.options : ''}
     >
       <div className="uk-offcanvas-bar">{props.children}</div>
     </div>

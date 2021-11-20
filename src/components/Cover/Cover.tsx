@@ -16,7 +16,7 @@ export function Cover(props: CoverProps) {
           alt={props.alt}
           width={props.width}
           height={props.height}
-          data-uk-cover={''}
+          uk-cover={''}
         />
       );
     }
@@ -29,7 +29,7 @@ export function Cover(props: CoverProps) {
           playsInline={props.playsInline}
           width={props.width}
           height={props.height}
-          data-uk-cover={''}
+          uk-cover={''}
         >
           <source src={props.src} type={`${props.type}/${props.videoFormat}`} />
         </video>

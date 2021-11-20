@@ -18,7 +18,7 @@ export function Nav(props: NavProps) {
       id={props.id ? props.id : null}
       style={props.style ? props.style : null}
       className={`${_setClassNames()}`}
-      data-uk-nav={props.options ? props.options : ''}
+      uk-nav={props.options ? props.options : ''}
     >
       {props.children}
     </ul>

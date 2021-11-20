@@ -12,7 +12,7 @@ export function Image(props: ImageProps) {
       height={props.height}
       style={props.style ? props.style : null}
       data-src={props.src}
-      data-uk-img={props.options ? props.options : ''}
+      uk-img={props.options ? props.options : ''}
     />
   );
 }

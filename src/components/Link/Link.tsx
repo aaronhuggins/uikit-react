@@ -14,7 +14,7 @@ export function Link(props: LinkProps) {
     <a
       id={props.id ? props.id : null}
       style={props.style ? props.style : null}
-      data-uk-toggle={props.toggleOptions ? props.toggleOptions : null}
+      uk-toggle={props.toggleOptions ? props.toggleOptions : null}
       href={props.href}
       className={`${_setClassNames()}`}
     >

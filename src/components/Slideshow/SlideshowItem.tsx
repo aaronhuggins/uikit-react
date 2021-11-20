@@ -13,7 +13,7 @@ export function SlideshowItem(props: SlideshowItemProps) {
           loop={props.loop}
           muted={props.muted}
           playsInline={props.playsInline}
-          data-uk-cover={''}
+          uk-cover={''}
         >
           <source src={props.src} type={`${props.type}/${props.videoFormat}`} />
         </video>

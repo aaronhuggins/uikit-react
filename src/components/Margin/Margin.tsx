@@ -20,7 +20,7 @@ export function Margin(props: MarginProps) {
     <div
       id={props.id ? props.id : null}
       style={props.style ? props.style : null}
-      data-uk-margin={props.dynamicWrapping}
+      uk-margin={props.dynamicWrapping}
       className={_setClassNames()}
     >
       {props.children}

@@ -7,7 +7,7 @@ export function Lightbox(props: LightboxProps) {
       id={props.id ? props.id : null}
       style={props.style ? props.style : null}
       className={setClassNames(props)}
-      data-uk-lightbox={props.options ? props.options : ''}
+      uk-lightbox={props.options ? props.options : ''}
     >
       {props.children}
     </div>

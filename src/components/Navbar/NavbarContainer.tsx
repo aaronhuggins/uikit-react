@@ -16,7 +16,7 @@ export function NavbarContainer(props: NavbarContainerProps) {
         id={props.id ? props.id : null}
         className={`${_setClassNames()}`}
         style={props.style ? props.style : null}
-        data-uk-navbar={props.options ? props.options : ''}
+        uk-navbar={props.options ? props.options : ''}
       >
         {props.children}
       </nav>

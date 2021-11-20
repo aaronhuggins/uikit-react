@@ -39,7 +39,7 @@ export function Slideshow(props: SlideshowProps) {
       id={props.id ? props.id : null}
       style={props.style ? props.style : null}
       className={`${setClassNames(props)}`}
-      data-uk-slideshow={props.options ? props.options : ''}
+      uk-slideshow={props.options ? props.options : ''}
     >
       {setNavigation()}
     </div>
