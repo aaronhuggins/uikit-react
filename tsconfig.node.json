@@ -4,7 +4,8 @@
     "outDir": "node",
     "module": "CommonJS",
     "sourceMap": false,
-    "declaration": true
+    "declaration": true,
+    "esModuleInterop": true
   },
   "exclude": [
     "src/__test__/**/*",

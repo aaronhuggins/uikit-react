@@ -1,7 +1,10 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.setClassNames = void 0;
-const classnames_1 = require("classnames");
+const classnames_1 = __importDefault(require("classnames"));
 const classNames = classnames_1.default;
 function setClassNames(props) {
     const isClassNameSet = props.className ? true : false;
