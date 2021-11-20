@@ -1,0 +1,11 @@
+import { Meta } from '@storybook/react';
+import './grid.scss';
+declare const _default: Meta<import('@storybook/react').Args>;
+export default _default;
+export declare const Default: any;
+export declare const GutterSmall: any;
+export declare const GutterMedium: any;
+export declare const GutterLarge: any;
+export declare const GutterCollapse: any;
+export declare const Divider: any;
+export declare const Match: any;

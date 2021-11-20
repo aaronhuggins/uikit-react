@@ -4,10 +4,18 @@
   "description": "UIkit components for use in React.",
   "repository": "https://github.com/vacarsu/uikit-react",
   "homepage": "https://vacarsu.github.io/uikit-react",
-  "main": "./lib/uikit-react.js",
-  "module": "./lib/uikit-react.js",
+  "main": "node/index.js",
+  "module": "lib/uikit-react.js",
+  "types": "node/index.js",
+  "exports": {
+    ".": {
+        "import": "./lib/uikit-react.js",
+        "require": "./node/index.js"
+    }
+  },
   "scripts": {
     "build": "rollup -c",
+    "build-node": "tsc -p ./tsconfig.node.json",
     "test": "jest --coverage --json --outputFile=coverage/coverage.json",
     "test-update": "jest --updateSnapshot",
     "test-watch": "jest --watchAll",
