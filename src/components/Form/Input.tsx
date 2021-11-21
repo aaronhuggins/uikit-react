@@ -14,6 +14,8 @@ export class Input extends React.Component<FormInputProps, any> {
         type="text"
         name={this.props.name ? this.props.name : null}
         value={(this.props.value as unknown) as string}
+        minLength={this.props.minLength}
+        maxLength={this.props.maxLength}
         onChange={this.props.onChange}
         onBlur={this.props.onBlur}
         onFocus={this.props.onFocus}
