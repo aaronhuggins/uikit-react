@@ -4,12 +4,18 @@ import { setClassNames } from '../../utils/set-class-names';
 
 export function Margin(props: MarginProps) {
   const _setClassNames = (): string => {
-    const stringArray = props.type.split('; ');
     let classString: string;
 
-    stringArray.map((string, idx) => {
-      classString = `${classString} uk-margin-${string}`;
-    });
+    if (props.type) {
+      const stringArray = props.type.split('; ');
+      let classString: string;
+
+      stringArray.map((string, idx) => {
+        classString = `${classString} uk-margin-${string}`;
+      });
+    } else {
+      classString = 'uk-margin';
+    }
 
     return _classNames(classString, {
       [`${setClassNames(props)}`]: true,

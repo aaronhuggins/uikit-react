@@ -9,11 +9,17 @@ const classnames_1 = __importDefault(require("classnames"));
 const set_class_names_1 = require("../../utils/set-class-names");
 function Margin(props) {
     const _setClassNames = () => {
-        const stringArray = props.type.split('; ');
         let classString;
-        stringArray.map((string, idx) => {
-            classString = `${classString} uk-margin-${string}`;
-        });
+        if (props.type) {
+            const stringArray = props.type.split('; ');
+            let classString;
+            stringArray.map((string, idx) => {
+                classString = `${classString} uk-margin-${string}`;
+            });
+        }
+        else {
+            classString = 'uk-margin';
+        }
         return classnames_1.default(classString, {
             [`${set_class_names_1.setClassNames(props)}`]: true,
         });

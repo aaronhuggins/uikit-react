@@ -13,7 +13,7 @@ export class Input extends React.Component<FormInputProps, any> {
         className={this.setClassNames()}
         type="text"
         name={this.props.name ? this.props.name : null}
-        checked={(this.props.value as unknown) as boolean}
+        value={(this.props.value as unknown) as string}
         onChange={this.props.onChange}
         onBlur={this.props.onBlur}
         onFocus={this.props.onFocus}
