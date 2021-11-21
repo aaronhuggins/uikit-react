@@ -8,7 +8,6 @@ export function Margin(props: MarginProps) {
 
     if (props.type) {
       const stringArray = props.type.split('; ');
-      let classString: string;
 
       stringArray.map((string, idx) => {
         classString = `${classString} uk-margin-${string}`;

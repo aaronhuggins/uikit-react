@@ -12,7 +12,6 @@ function Margin(props) {
         let classString;
         if (props.type) {
             const stringArray = props.type.split('; ');
-            let classString;
             stringArray.map((string, idx) => {
                 classString = `${classString} uk-margin-${string}`;
             });
