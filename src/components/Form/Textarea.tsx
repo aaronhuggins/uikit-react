@@ -15,6 +15,8 @@ export class Textarea extends React.Component<FormTextareaProps, any> {
         onChange={this.props.onChange}
         onBlur={this.props.onBlur}
         onFocus={this.props.onFocus}
+        readOnly={this.props.readOnly}
+        disabled={this.props.disabled}
       >
         {this.props.children}
       </textarea>
